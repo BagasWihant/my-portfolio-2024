@@ -24,6 +24,8 @@ const config: Config = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        shimmer: "shimmer 2s linear infinite"
+
       },
       keyframes: {
         spotlight: {
@@ -36,6 +38,14 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        shimmer: {
+          from: {
+            "backgroundPosition": "0 0"
+          },
+          to: {
+            "backgroundPosition": "-200% 0"
+          }
+        }
       },
     },
   },
