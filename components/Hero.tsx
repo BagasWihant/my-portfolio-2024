@@ -22,14 +22,14 @@ const Hero = () => {
             <div className="flex justify-center relative my-20 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                        Let's Build Something
+                        Let&apos;s Build Something with Me
                     </h2>
 
                     <TextGenerateEffect
                         className="text-center text-4xl md:text-6xl lg:text-7xl"
                         words="Software Engineer & Web Developer" />
 
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I'm Bagas Wihantoro, a software engineer and web developer</p>
+                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m Bagas Wihantoro, a software engineer and web developer</p>
 
                     <a href="#about">
                         <ButtonMagic
