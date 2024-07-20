@@ -1,3 +1,4 @@
+import { About } from "@/components/About";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatNav";
@@ -12,7 +13,7 @@ export default function Home() {
             {name: 'Home',link: '#home',icon: <FaLocationArrow />}
           ]} />
         <Hero />
-        <Grid />
+        <About />
       </div>
     </main>
   );
