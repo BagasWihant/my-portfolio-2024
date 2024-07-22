@@ -30,8 +30,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 3) / 50;
-    const y = (e.clientY - top - height / 3) / 50;
+    const x = (e.clientX - left - width / 10) / 50;
+    const y = (e.clientY - top - height / 40) / 50;
     console.log(x, y);
     
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
