@@ -27,9 +27,9 @@ const Hero = () => {
 
                     <TextGenerateEffect
                         className="text-center text-4xl md:text-6xl lg:text-7xl"
-                        words="Software Engineer & Web Developer" />
+                        words="Hello, I&apos;m Fullstack Web Developer" />
 
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m Bagas Wihantoro, a software engineer and web developer</p>
+                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Let&apos;s create some beautiful apps with me</p>
 
                     <a href="#about">
                         <ButtonMagic

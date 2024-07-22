@@ -19,53 +19,48 @@ export function About() {
         <Button
           duration={8651}
           containerClassName="w-full"
-          // borderClassName="w-full h-full"
           borderRadius=".75rem"
-          className=" dark:bg-slate-900/45 backdrop-blur text-black dark:text-white border-neutral-200 dark:border-slate-800 grid md:grid-cols-2 grid-cols-1 gap-4 p-5"
-        >
-          <div className="flex items-center px-4">
-            <div className="font-normal text-start text-neutral-600 dark:text-neutral-400">
-              <FlipWords className="text-3xl" words={words} /> <br />
-              <span className="text-lg">
-                I have been working as a web developer since 2021. And i have
-                created several projects both for personal and for companies.
-              </span>
-            </div>
-          </div>
+          className=" dark:bg-slate-900/45 backdrop-blur text-black dark:text-white border-neutral-200 dark:border-slate-800  p-5"
+          >
+          <p className="text-3xl pb-2 font-bold">About Me</p>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+            <div className="flex items-center px-4">
+              <div className="font-normal text-start text-neutral-600 dark:text-neutral-400">
+                <FlipWords className="md:text-4xl text-2xl" words={words} /> <br />
+                <span className="text-lg">
+                  I have been working as a web developer since 2021. And i have
+                  created several projects both for personal and for companies.
+                  <br />
+                  <br />
+                  I have a passion for creating functional
+                  websites. I am always looking for new and exciting projects.
 
-          <div className="flex justify-center items-center">
-            {/* <Image
-              src="/image.jpg"
-              alt="Picture of the author"
-              priority
-              style={{
-                borderRadius: "1.75rem",
-                width: "100%",
-                height: "auto",
-              }}
-              width={500}
-              height={300}
-            /> */}
-                  <Meteors number={30} className=""/>
-            <CardContainer className="inter-var">
-              <CardBody className="relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto   ">
-                <CardItem translateZ="100" className="w-full">
-                  <Image
-                    src="/image.jpg"
-                    priority
-                    style={{
-                      borderRadius: "1.75rem",
-                      width: "100%",
-                      height: "auto",
-                    }}
-                    width={500}
-                    height={300}
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl z-10"
-                    alt="thumbnail"
-                  />
-                </CardItem>
-              </CardBody>
-            </CardContainer>
+                </span>
+              </div>
+            </div>
+
+            <div className="flex justify-center items-center">
+              <Meteors number={30} className="" />
+              <CardContainer className="inter-var">
+                <CardBody className="relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto   ">
+                  <CardItem translateZ="100" className="w-full">
+                    <Image
+                      src="/image.jpg"
+                      priority
+                      style={{
+                        borderRadius: "1.75rem",
+                        width: "100%",
+                        height: "auto",
+                      }}
+                      width={500}
+                      height={300}
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl z-10"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                </CardBody>
+              </CardContainer>
+            </div>
           </div>
         </Button>
       </div>
