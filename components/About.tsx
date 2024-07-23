@@ -41,7 +41,8 @@ export function About() {
 
             <div className="flex justify-center items-center">
               <Meteors number={30} className="" />
-              <CardContainer className="inter-var">
+              <CardContainer className="inter-var"
+              numberX={2} numberY={2}>
                 <CardBody className="relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto   ">
                   <CardItem translateZ="100" className="w-full">
                     <Image

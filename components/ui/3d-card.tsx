@@ -18,10 +18,14 @@ export const CardContainer = ({
   children,
   className,
   containerClassName,
+  numberX,
+  numberY,
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  numberX: number;
+  numberY: number;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
@@ -30,8 +34,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 15) / 25;
-    const y = (e.clientY - top - height / 15) / 28;
+    const x = (e.clientX - left - width / numberX+2) / 35+numberX;
+    const y = (e.clientY - top - height / numberY+9) / 35+numberY;
     console.log(x, y);
     
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
