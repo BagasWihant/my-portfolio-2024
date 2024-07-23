@@ -53,21 +53,21 @@ const Hero = () => {
               as="button"
               className="dark:bg-black dark:text-white flex items-center"
             >
-              <FaLinkedin className="h-9 w-9" />
+              <FaLinkedin className="md:h-9 md:w-9 h-5 w-5" />
             </HoverBorderGradient>
 
             <button className="inline-flex p-2 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-white transition-colors">
-              <FaGithub className="h-9 w-9" />
+              <FaGithub className="md:h-9 md:w-9 h-5 w-5" />
             </button>
             <HoverBorderGradient
               containerClassName="rounded-2xl"
               as="button"
               className="dark:bg-black dark:text-white flex items-center"
             >
-              <FaInstagram className="h-9 w-9" />
+              <FaInstagram className="md:h-9 md:w-9 h-5 w-5" />
             </HoverBorderGradient>
             <button className="inline-flex p-2 animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-white transition-colors">
-              <FaFacebook className="h-9 w-9" />
+              <FaFacebook className="md:h-9 md:w-9 h-5 w-5" />
             </button>
           </div>
 
