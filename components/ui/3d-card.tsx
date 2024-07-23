@@ -36,7 +36,6 @@ export const CardContainer = ({
       containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / numberX+2) / 35+numberX;
     const y = (e.clientY - top - height / numberY+9) / 35+numberY;
-    console.log(x, y);
     
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
@@ -55,11 +54,11 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "flex items-center justify-center",
+          "",
           containerClassName
         )}
         style={{
-          perspective: "1000px",
+          perspective: "1100px",
         }}
       >
         <div
