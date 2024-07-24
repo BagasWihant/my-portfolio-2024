@@ -1,6 +1,5 @@
 import { About } from "@/components/About";
 import Contact from "@/components/Contact";
-import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
 import { FloatingNav } from "@/components/ui/FloatNav";
