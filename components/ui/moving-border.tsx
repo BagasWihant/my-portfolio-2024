@@ -18,6 +18,8 @@ export function Button({
   borderClassName,
   duration,
   className,
+  warna,
+  ukuran,
   ...otherProps
 }: {
   borderRadius?: string;
@@ -27,6 +29,8 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
+  warna?: string;
+  ukuran?: string;
   [key: string]: any;
 }) {
   return (
@@ -44,10 +48,9 @@ export function Button({
         className="absolute inset-0"
         style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
       >
-        <MovingBorder duration={duration} rx="5%" ry="5%">
+        <MovingBorder duration={duration} rx={ukuran} ry={ukuran}>
           <div
             className={cn(
-              "h-80 w-80 opacity-[0.8] bg-[radial-gradient(var(--purple-500)_1%,transparent_80%)]",
               borderClassName
             )}
           />
