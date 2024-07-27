@@ -7,8 +7,8 @@ import { ThemeProvider } from "./theme-provider"
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bagas Wihantoro Portfolio",
-  description: "Minimalized",
+  title: "Bagas Wihantoro",
+  description: "Bagas Wihantoro - Software Engineer & Web Developer",
 };
 
 export default function RootLayout({
